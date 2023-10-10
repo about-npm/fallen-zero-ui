@@ -31,15 +31,15 @@ const Y = (n, r) => {
       o += "";
       const g = o.split(".");
       let f = g[0];
-      const N = g.length > 1 ? e.decimal + g[1] : "", h = /(\d+)(\d{3})/;
+      const N = g.length > 1 ? e.decimal + g[1] : "", _ = /(\d+)(\d{3})/;
       if (e.separator && !E(e.separator))
-        for (; h.test(f); )
-          f = f.replace(h, "$1" + e.separator + "$2");
+        for (; _.test(f); )
+          f = f.replace(_, "$1" + e.separator + "$2");
       return e.prefix + f + N + e.suffix;
-    }, u = s(e.startVal), p = s(d(e.startVal)), t = s(null), m = s(!1), c = s(e.duration), v = s(null), w = s(null), x = s(null), a = s(null), V = B(() => e.startVal > e.endVal), F = (i) => {
+    }, u = s(e.startVal), p = s(d(e.startVal)), t = s(null), m = s(!1), c = s(e.duration), v = s(null), w = s(null), b = s(null), a = s(null), V = B(() => e.startVal > e.endVal), F = (i) => {
       v.value || (v.value = i), w.value = i;
       const o = i - v.value;
-      x.value = c.value - o, e.useEasing ? V.value ? t.value = u.value - e.easingFn(
+      b.value = c.value - o, e.useEasing ? V.value ? t.value = u.value - e.easingFn(
         o,
         0,
         u.value - e.endVal,
@@ -52,12 +52,12 @@ const Y = (n, r) => {
       ) : V.value ? t.value = u.value - (u.value - e.endVal) * (o / c.value) : t.value = u.value + (e.endVal - u.value) * (o / c.value), V.value ? t.value = t.value < e.endVal ? e.endVal : t.value : t.value = t.value > e.endVal ? e.endVal : t.value, p.value = d(t.value), o < c.value ? (a.value !== null && cancelAnimationFrame(a.value), a.value = requestAnimationFrame(F)) : (a.value !== null && cancelAnimationFrame(a.value), l("callback"));
     }, A = () => {
       u.value = e.startVal, v.value = null, c.value = e.duration, m.value = !1, a.value !== null && cancelAnimationFrame(a.value), a.value = requestAnimationFrame(F);
+    }, x = () => {
+      v.value = null, c.value = +(b.value || 0), u.value = +(t.value || 0), a.value !== null && cancelAnimationFrame(a.value), a.value = requestAnimationFrame(F), m.value = !1;
     }, y = () => {
-      v.value = null, c.value = +(x.value || 0), u.value = +(t.value || 0), a.value !== null && cancelAnimationFrame(a.value), a.value = requestAnimationFrame(F), m.value = !1;
-    }, _ = () => {
       a.value !== null && cancelAnimationFrame(a.value), m.value = !0;
     }, C = () => {
-      m.value ? y() : _();
+      m.value ? x() : y();
     }, D = () => {
       v.value = null, a.value !== null && cancelAnimationFrame(a.value), p.value = d(e.startVal);
     };
@@ -70,7 +70,7 @@ const Y = (n, r) => {
       e.autoplay && A(), l("mountedCallback");
     }), I(() => {
       a.value !== null && cancelAnimationFrame(a.value);
-    }), r({ pauseResume: C, pause: _, reset: D, resume: y, start: A }), (i, o) => (L(), q(
+    }), r({ pauseResume: C, pause: y, reset: D, resume: x, start: A }), (i, o) => (L(), q(
       "span",
       null,
       M(p.value),
@@ -78,9 +78,9 @@ const Y = (n, r) => {
       /* TEXT */
     ));
   }
-}), K = Y(z), O = [K], b = Symbol("INSTALLED_KEY"), $ = (n = []) => ({
+}), K = Y(z), O = [K], h = Symbol("INSTALLED_KEY"), $ = (n = []) => ({
   install: (l) => {
-    console.log(l[b]), !l[b] && (l[b] = !0, n.forEach((e) => {
+    l[h] || (l[h] = !0, n.forEach((e) => {
       l.use(e);
     }));
   }
