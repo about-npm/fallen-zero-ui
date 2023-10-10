@@ -2,7 +2,7 @@
  * @Author       : fallen_zero
  * @Date         : 2023-10-10 16:25:33
  * @LastEditors  : fallen_zero
- * @LastEditTime : 2023-10-10 17:41:03
+ * @LastEditTime : 2023-10-10 17:44:08
  * @FilePath     : /fallen-zero-ui/packages/fallen-zero-ui/make-installer.ts
  * @FileName     :
  */
@@ -18,7 +18,6 @@ export const makeInstaller = (components: Plugin[] = []) => {
 
     (app as any)[INSTALLED_KEY] = true;
     components.forEach((c) => {
-      console.log(c);
       app.use(c);
     });
   };

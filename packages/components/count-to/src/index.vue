@@ -2,13 +2,17 @@
  * @Author       : fallen_zero
  * @Date         : 2023-10-10 16:00:00
  * @LastEditors  : fallen_zero
- * @LastEditTime : 2023-10-10 16:05:24
+ * @LastEditTime : 2023-10-10 17:44:48
  * @FilePath     : /fallen-zero-ui/packages/components/count-to/src/index.vue
  * @FileName     : 
 -->
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue';
+
+defineOptions({
+  name: 'FzCountTo',
+});
 
 /**
  * 父级传入的值类型
