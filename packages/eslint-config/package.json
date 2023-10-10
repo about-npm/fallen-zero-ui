@@ -15,14 +15,17 @@
     "config",
     "fallen-zero"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "fallen-zero",
+  "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.17.0",
     "vue-eslint-parser": "^9.3.2"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
   }
 }
