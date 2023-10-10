@@ -2,7 +2,7 @@
  * @Author       : fallen_zero
  * @Date         : 2023-10-10 14:04:08
  * @LastEditors  : fallen_zero
- * @LastEditTime : 2023-10-10 16:52:49
+ * @LastEditTime : 2023-10-10 16:58:56
  * @FilePath     : /fallen-zero-ui/scripts/release.js
  * @FileName     :
  */
@@ -53,7 +53,7 @@ async function pubishPackage(pkgName, version) {
   try {
     execSync('git add .', { stdio: 'inherit' });
 
-    execSync(`git commit -m "chore: release v${version}"`, {
+    execSync(`git commit -m "feat: release v${version}"`, {
       stdio: 'inherit',
     });
     // execSync(`git tag -a v${version} -m "v${version}"`, { stdio: 'inherit' });
