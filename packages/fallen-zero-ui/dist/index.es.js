@@ -82,6 +82,7 @@ const Y = (n, r) => {
   }
 }), z = $([...O]), U = z.install;
 export {
+  K as FzCountTo,
   z as default,
   U as install
 };
