@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES2016",
+    "sourceMap": false,
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "jsx": "preserve",
+    "lib": ["DOM", "ESNext"],
+    "types": ["unplugin-vue-define-options"],
+    "rootDir": ".",
+    "moduleResolution": "Node",
+    "paths": {
+      "@fallen-zero-ui/*": ["packages/*"]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@fallen-zero/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "unpkg": "index.js",
+  "jsdlivr": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

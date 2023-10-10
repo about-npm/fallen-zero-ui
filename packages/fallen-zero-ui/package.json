@@ -1,0 +1,36 @@
+{
+  "name": "fallen-zero-ui",
+  "version": "1.0.2",
+  "description": "A Component Library for Vue 3",
+  "main": "dist/index.es.js",
+  "module": "dist/index.es.ts",
+  "unpkg": "dist/index.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/types/fallen-zero-ui/index.d.ts"
+    },
+    "./*": "./*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fallen-zero",
+    "fallen-zero-ui",
+    "compoent library",
+    "ui",
+    "vue",
+    "ui framework"
+  ],
+  "author": "fallen-zero",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "style": "dist/style.css",
+  "peerDependencies": {
+    "vue": "^3.2.31"
+  }
+}

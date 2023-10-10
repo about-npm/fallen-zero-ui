@@ -1,0 +1,8 @@
+node_modules
+dist
+scripts
+eslint-config
+
+.eslintrc.js
+.prettierrc.js
+commitlint.config.js

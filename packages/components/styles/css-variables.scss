@@ -1,0 +1,56 @@
+@import './var';
+
+:root {
+  --fz-color-white: #fff;
+  --fz-color-black: #000;
+  --fz-bg-color: var(--fz-color-white);
+
+  @each $name, $size in $paddingSizes {
+    --fz-padding-#{$name}: #{$size};
+  }
+
+  @each $name, $size in $lineHeightSizes {
+    --fz-line-height-#{$name}: #{$size};
+  }
+
+  --fz-border-color: #ebedf0;
+  --fz-border-color-lighter: #ebeef5;
+  --fz-border-width: 1px;
+  --fz-border-style: solid;
+  --fz-border: var(--fz-border-width) var(--fz-border-style)
+    var(--fz-border-color);
+
+  @each $name, $size in $radiusSizes {
+    --fz-radius-#{$name}: #{$size};
+  }
+
+  --fz-active-opacity: 0.6;
+  --fz-disabled-opacity: 0.5;
+  --fz-overlay-color-lighter: rgba(0, 0, 0, 0.5);
+  --fz-box-shadow: 0 12px 32px 4px rbga(0, 0, 0, 0.04),
+    0 8px 20px rgba(0, 0, 0, 0.08);
+  --fz-box-shadow-light: 0 0 12px rgba(0, 0, 0, 0.12);
+  --fz-font-line-height-primary: 24px;
+  --fz-transiton-duration: 0.3s;
+
+  @each $name, $size in $fontSizes {
+    --fz-font-size-#{$name}: #{$size};
+  }
+
+  @each $name, $color in $disabledColors {
+    --fz-disabled-#{$name}-color: #{$color};
+  }
+
+  @each $name, $size in $iconSizes {
+    --fz-icon-size-#{$name}: #{$size};
+  }
+
+  @each $name, $color in $colors {
+    --fz-color-#{$name}: #{$color};
+    --fz-color-#{$name}-3: #{rgba($color, 30%)};
+    --fz-color-#{$name}-5: #{rgba($color, 50%)};
+    --fz-color-#{$name}-7: #{rgba($color, 70%)};
+    --fz-color-#{$name}-8: #{rgba($color, 80%)};
+    --fz-color-#{$name}-9: #{rgba($color, 90%)};
+  }
+}

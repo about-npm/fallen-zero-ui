@@ -1,0 +1,28 @@
+{
+  "name": "@fallen-zero/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "tslint",
+    "config",
+    "fallen-zero"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.17.0",
+    "vue-eslint-parser": "^9.3.2"
+  }
+}
