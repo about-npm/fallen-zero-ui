@@ -1,4 +1,4 @@
-export declare const FzCountTo: import("@fallen-zero/utils").SFCWithInstall<import("vue").DefineComponent<{
+export declare const FzCountTo: import("@fallen-zero/utils/install").SFCWithInstall<import("vue").DefineComponent<{
     startVal: {
         type: import("vue").PropType<number>;
         default: number;
