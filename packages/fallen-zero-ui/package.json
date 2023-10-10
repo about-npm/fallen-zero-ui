@@ -1,6 +1,6 @@
 {
   "name": "fallen-zero-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Component Library for Vue 3",
   "main": "dist/index.es.js",
   "module": "dist/index.es.ts",
@@ -12,7 +12,7 @@
     ".": {
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js",
-      "types": "./dist/types/fallen-zero-ui/index.d.ts"
+      "types": "./dist/types/packages/fallen-zero-ui/index.d.ts"
     },
     "./*": "./*"
   },
