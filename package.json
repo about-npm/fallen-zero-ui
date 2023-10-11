@@ -1,6 +1,6 @@
 {
   "name": "fallen-zero-ui",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -24,11 +24,13 @@
     "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
     "@fallen-zero/components": "workspace:*",
+    "@fallen-zero/directives": "workspace:*",
     "@fallen-zero/eslint-config": "workspace:*",
     "@fallen-zero/utils": "workspace:*",
-    "@fallen-zero/directives": "workspace:*",
     "@vitejs/plugin-vue": "^4.4.0",
     "chalk": "^4.1.2",
+    "echarts": "^5.4.3",
+    "echarts-liquidfill": "^3.1.0",
     "enquirer": "^2.4.1",
     "eslint": "^8.51.0",
     "husky": "^8.0.3",
