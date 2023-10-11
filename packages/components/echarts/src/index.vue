@@ -2,7 +2,7 @@
  * @Author       : fallen_zero
  * @Date         : 2023-10-11 08:33:17
  * @LastEditors  : fallen_zero
- * @LastEditTime : 2023-10-11 08:41:09
+ * @LastEditTime : 2023-10-11 08:56:14
  * @FilePath     : /fallen-zero-ui/packages/components/echarts/src/index.vue
  * @FileName     : 
 -->
@@ -104,20 +104,11 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="echarts">
-    <div ref="echartsRef" class="echarts-main"></div>
+  <div class="fz-echarts">
+    <div ref="echartsRef" class="fz-echarts-main"></div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.echarts {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-
-  &-main {
-    width: 100%;
-    height: 100%;
-  }
-}
+@import './index.scss';
 </style>

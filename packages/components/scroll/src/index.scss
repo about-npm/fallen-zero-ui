@@ -1,0 +1,23 @@
+.fz-scroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &-box {
+    position: relative;
+    overflow: hidden;
+
+    &__list {
+      overflow: hidden;
+
+      &-item {
+        &-info {
+          margin-bottom: 20px;
+          line-height: 44px;
+          text-align: center;
+          background: rgba(135, 206, 235, 0.4);
+        }
+      }
+    }
+  }
+}
