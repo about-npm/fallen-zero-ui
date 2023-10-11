@@ -2,7 +2,7 @@
  * @Author       : fallen_zero
  * @Date         : 2023-10-11 08:55:11
  * @LastEditors  : fallen_zero
- * @LastEditTime : 2023-10-11 09:00:00
+ * @LastEditTime : 2023-10-11 09:01:48
  * @FilePath     : /fallen-zero-ui/packages/components/scroll/src/index.vue
  * @FileName     : 
 -->
@@ -17,6 +17,10 @@ import {
   watch,
 } from 'vue';
 import { debounce } from '../../utils';
+
+defineOptions({
+  name: 'FzScroll',
+});
 
 interface Props {
   /** 是否允许滚动 */
