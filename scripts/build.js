@@ -2,7 +2,7 @@
  * @Author       : fallen_zero
  * @Date         : 2023-10-10 13:56:06
  * @LastEditors  : fallen_zero
- * @LastEditTime : 2023-10-11 08:39:53
+ * @LastEditTime : 2023-10-11 09:30:36
  * @FilePath     : /fallen-zero-ui/scripts/build.js
  * @FileName     :
  */
@@ -37,6 +37,7 @@ const baseConfig = defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
     outDir,
+    cssCodeSplit: true, // 强制内联CSS
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['vue', 'echarts'],
