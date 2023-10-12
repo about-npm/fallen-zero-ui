@@ -1,6 +1,6 @@
 {
   "name": "fallen-zero-ui",
-  "version": "1.1.11",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     ]
   },
   "keywords": [],
-  "author": "",
+  "author": "fallen-zero",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
