@@ -100,7 +100,6 @@ for (let i = 0; i < 40; i++) {
   background: rgb(255 255 255 / 0.2);
 }
 </style>
-
 ```
 
 ## 组件说明
@@ -248,8 +247,8 @@ onBeforeUnmount(clearTimer);
 
 #### 参数说明
 
-| 参数   | 类型                       | 说明                                                         |
-| ------ | -------------------------- | ------------------------------------------------------------ |
+| 参数   | 类型                       | 说明                                                          |
+| ------ | -------------------------- | ------------------------------------------------------------- |
 | option | EchartsOption \| undefined | echarts 配置, <font color="red">必传</font>, 可以为 undefined |
 
 #### 回调函数说明
@@ -263,7 +262,7 @@ onBeforeUnmount(clearTimer);
 
 > 必须以具有宽高的容器进行包裹
 >
-> <font color="red">控制  **`外部容器`** 显隐时使用 `v-if`  进行控制, `v-show`  会丢失容器宽高导致样式冲突</font>
+> <font color="red">控制 **`外部容器`** 显隐时使用 `v-if` 进行控制, `v-show` 会丢失容器宽高导致样式冲突</font>
 
 ```vue
 <template>
@@ -354,9 +353,9 @@ const getData = async () => {
 
 ```vue
 <script setup lang="ts">
-import {FzScroll } from 'fallen-zero-ui';
+import { FzScroll } from 'fallen-zero-ui';
 import 'fallen-zero-ui/dist/index.css';
-    
+
 const list = ref<number[]>([]);
 
 for (let i = 0; i < 40; i++) {
@@ -374,7 +373,6 @@ for (let i = 0; i < 40; i++) {
   </div>
 </template>
 
-
 <style lang="scss" scoped>
 .box {
   width: 500px;
@@ -384,4 +382,3 @@ for (let i = 0; i < 40; i++) {
 }
 </style>
 ```
-

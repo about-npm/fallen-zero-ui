@@ -2,7 +2,7 @@
  * @Author       : fallen_zero
  * @Date         : 2023-10-10 10:29:08
  * @LastEditors  : fallen_zero
- * @LastEditTime : 2023-10-10 16:04:07
+ * @LastEditTime : 2024-01-09 08:51:45
  * @FilePath     : /fallen-zero-ui/packages/eslint-config/index.js
  * @FileName     :
  */
